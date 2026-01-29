@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIU Student Portal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --miu-red: #b30000;
+            --bg-gray: #f4f4f4;
+            --border-color: #ddd;
+            --text-main: #000;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-gray);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .mobile-container {
+            width: 100%;
+            max-width: 450px;
+            background-color: white;
+            min-height: 100vh;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            position: relative;
+            padding-bottom: 60px;
+        }
+
+        /* Header Styles */
+        header {
+            text-align: center;
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .logo {
+            width: 200px;
+        }
+
+        .user-bar {
+            background-color: var(--miu-red);
+            color: white;
+            padding: 12px 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .user-info {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        /* Grade Card Styles */
+        .content-area {
+            padding: 15px;
+            border: 1px solid #fbccd1;
+            margin: 10px;
+            border-radius: 15px;
+        }
+
+        .course-card {
+            border: 1px solid #ccc;
+            margin-bottom: -1px; /* Overlap borders like the screenshot */
+            background-color: #fff;
+        }
+
+        .course-card:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        .card-inner {
+            padding: 12px 15px;
+        }
+
+        .course-title {
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        .course-code {
+            color: #333;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        .grade {
+            font-weight: normal;
+        }
+
+        /* Status & GPA Section */
+        .status-section {
+            padding: 20px 15px;
+        }
+
+        .status-row {
+            display: flex;
+            align-items: center;
+            margin-bottom: 25px;
+            font-size: 1.1rem;
+        }
+
+        .triangle {
+            color: var(--miu-red);
+            margin-right: 10px;
+            font-size: 0.8rem;
+        }
+
+        .label {
+            font-weight: 800;
+            margin-right: 15px;
+            min-width: 120px;
+        }
+
+        /* Footer */
+        footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            background: #eee;
+            padding: 10px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 0.8rem;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 5px;
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
+<body>
+
+<div class="mobile-container">
+    <header>
+        <img src="https://www.miuegypt.edu.eg/wp-content/uploads/2018/07/miu-logo.png" alt="MIU Logo" class="logo">
+    </header>
+
+    <div class="user-bar">
+        <div class="user-info">
+            <i class="fas fa-bars"></i>
+            <span>Welcome Salma Mohamed Abdelhamid Mohamed Ibrahim</span>
+        </div>
+        <div class="icons">
+            <i class="fas fa-bell" style="margin-right: 15px;"></i>
+            <i class="fas fa-sign-out-alt"></i>
+        </div>
+    </div>
+
+    <div class="content-area">
+        <div class="course-card">
+            <div class="card-inner">
+                <span class="course-title">Supplementary Mathematics</span>
+                <span class="course-code">BAS002</span>
+                <span class="grade">P</span>
+            </div>
+        </div>
+
+        <div class="course-card">
+            <div class="card-inner">
+                <span class="course-title">Physics</span>
+                <span class="course-code">BAS121</span>
+                <span class="grade">B</span>
+            </div>
+        </div>
+
+        <div class="course-card">
+            <div class="card-inner">
+                <span class="course-title">Probability & Statistics</span>
+                <span class="course-code">BAS131</span>
+                <span class="grade">B+</span>
+            </div>
+        </div>
+
+        <div class="course-card">
+            <div class="card-inner">
+                <span class="course-title">Introduction to Computer Science</span>
+                <span class="course-code">CSC101</span>
+                <span class="grade">B</span>
+            </div>
+        </div>
+
+        <div class="course-card">
+            <div class="card-inner">
+                <span class="course-title">Fundamentals of Academic English 2</span>
+                <span class="course-code">FAE02</span>
+                <span class="grade">P</span>
+            </div>
+        </div>
+
+        <div class="course-card">
+            <div class="card-inner">
+                <span class="course-title">Digital Media Marketing</span>
+                <span class="course-code">MRK100</span>
+                <span class="grade">B</span>
+            </div>
+        </div>
+
+        <div class="course-card">
+            <div class="card-inner">
+                <span class="course-title">Introduction to Computer Science & Programming</span>
+                <span class="course-code">SWE110</span>
+                <span class="grade">B-</span>
+            </div>
+        </div>
+
+        <div class="status-section">
+            <div class="status-row">
+                <span class="triangle">▶</span>
+                <span class="label">Status In:</span>
+                <span>Regular Student</span>
+            </div>
+            <div class="status-row">
+                <span class="triangle">▶</span>
+                <span class="label">Status Out:</span>
+                <span>Regular Student</span>
+            </div>
+            <div class="status-row">
+                <span class="triangle">▶</span>
+                <span class="label">Semester GPA:</span>
+                <span>3.00</span>
+            </div>
+            <div class="status-row">
+                <span class="triangle">▶</span>
+                <span class="label">CUM GPA:</span>
+                <span>3.00</span>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="social-icons">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-linkedin-in"></i>
+            <i class="fab fa-youtube"></i>
+        </div>
+        <div>salma2504126 &nbsp;&nbsp;&nbsp;&nbsp; 2025 © MIU</div>
+    </footer>
+</div>
+
+</body>
+</html>
